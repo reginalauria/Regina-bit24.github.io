@@ -1,37 +1,93 @@
-body {
-    background-image: url(leopard.jpg);
-}
-
-h1{
+h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(123, 29, 29);
-    letter-spacing: 5px;
-    background-color: rgb(131, 106, 42);
+    color: #1A374D; /* Azul oscuro */
+    background-color: #D9B44A; /* Mostaza medio */
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px; /* Bordes redondeados */
 }
-h2{
+  
+
+h2 {
     background-color: darkcyan;
     color: black;
-    text-align: ; left:;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px 5px 5px;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
-p{
+
+p {
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(141, 192, 182);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
 }
 
 p::first-letter {
-    color:  darkcyan;
+    color: darkcyan;
     font-size: xx-large;
-  }
+    font-weight: bold;
+}
 
-img{
-    float: left;
-    margin-right: 20px;
-    width: 200px;
-    border-radius: 5px;
-    border-color: darkcyan;
+img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5%; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espaciado debajo de la imagen */
+    border: 2px solid darkcyan; /* Borde para destacar la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+}
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    p {
+        padding: 0.8rem;
+    }
+
+    img {
+        max-width: 100%; /* Imagen ocupa el ancho completo en pantallas pequeñas */
+        margin-bottom: 1rem; /* Asegura el espaciado adecuado debajo de la imagen */
+    }
+}
+
+/* Media Query para dispositivos aún más pequeños */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+    }
+
+    p {
+        padding: 0.5rem;
+    }
 }
