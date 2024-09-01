@@ -1,16 +1,27 @@
+body {
+    background: #1fa2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1fa2ff, #12d8fa, #a6ffcb); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1fa2ff, #12d8fa, #a6ffcb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#karateca {
+    background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1A374D; /* Azul oscuro */
-    background-color: #D9B44A; /* Mostaza medio */
+    color: #1A374D;
+    background-color: #D9B44A; 
     letter-spacing: 0.3rem;
     padding: 1rem;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px; 
 }
   
-
 h2 {
     background-color: darkcyan;
     color: black;
@@ -39,12 +50,12 @@ p::first-letter {
 }
 
 img {
-    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 5%; /* Bordes redondeados */
-    margin-bottom: 1rem; /* Espaciado debajo de la imagen */
-    border: 2px solid darkcyan; /* Borde para destacar la imagen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5%; 
+    margin-bottom: 1rem; 
+    border: 2px solid darkcyan; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .clearfix::after {
@@ -70,8 +81,8 @@ img {
     }
 
     img {
-        max-width: 100%; /* Imagen ocupa el ancho completo en pantallas pequeñas */
-        margin-bottom: 1rem; /* Asegura el espaciado adecuado debajo de la imagen */
+        max-width: 100%; 
+        margin-bottom: 1rem; 
     }
 }
 
