@@ -16,6 +16,14 @@ background: -webkit-linear-gradient(to left, #181818, #BA8B02);  /* Chrome 10-25
 background: linear-gradient(to left, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.caption-style {
+    margin-top: 1rem;
+    text-align: center; 
+    width: auto; 
+    display: block; 
+    color: white;
+}
+
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
